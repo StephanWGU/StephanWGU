@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style/Juneau.css">
+ 
+  
+</head>
+<body>
+  <section id="banner">
+    <div class="banner-text">
+        <h1>Welcome to Juneau</h1>
+        
+    </div>
+
+</section>
+
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="index.html">HOME</a></li>    
+       <li><a href="Anchorage.html">Anchorage</a></li>    
+        <li><a href="Fairbanks.html">Fairbanks</a></li> 
+        <li><a href="Form.html">Form</a></li>   
+           
+    </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="img/menu.png" id="menu">
+</div>
+
+<!--Features-->
+    
+<section id="feature">
+<div class="title-text"> 
+<h1>Juneau Capital of Alaska</h1>
+</div> 
+<div class="feature-box">
+  <div class="feature-text">
+    
+  </div>
+  <table border="1">
+    <tr>
+      <th>Population</th>
+      <th>Year of city incorporated</th>
+      <th>location of City</th>
+      <th>Classification of City</th>
+      <th>Average income</th>
+    </tr>
+    <tr>
+      <td>31,973</td>
+      <td>June 29, 1900</td>
+      <td>Alaska</td>
+      <td>Urban</td>
+      <td>$88,077</td>
+      <tr>
+        <th>Senator</th>
+        <th>Homeownership</th>
+        <th>Homeowners with Mortgage</th>
+        <th>Insured</th>
+        <th>uninsured</th>
+      </tr>
+      <tr>
+      <td>Scott Jiu Wo Kawasaki</td>
+      <td>37.8%</td>
+      <td>72.9%</td>
+      <td>46.1%</td>
+      <td>53.9%</td>
+      </tr>  
+    </tr>
+    <ol>
+      <h2>Juneau Facts</h2>
+      <li>In 1906, the capital of Alaska was moved from Sitka to Juneau.</li>
+      <li>Two tribes of the Tlingit Alaska Native people lived and fished along the Gastineau Channel near Juneau.</li>
+      <li>Juneau is big, with a total area of 3,255 square miles.</li>
+      <li>The most famous glacier near Juneau is the Mendenhall Glacier.</li>
+      <li>On the winter solstice, there are just 6 hours and 25 minutes of daylight.</li>
+    </ol>
+  </table>
+  <aside>
+
+    <h1> Wild Life </h1>
+    
+      <p> Black-tailed Deer: These graceful animals can be seen grazing in the nearby meadows and forests.</p>
+      <p> Humpback Whales: Visitors can take a tour on a boat to get up close and personal with these majestic creatures </p>
+      <p> Bears: Visitors should always exercise caution when viewing bears, as they are wild animals and can be unpredictable.</p>
+    
+  </aside>
+    <!-- </div> -->
+    <div class="features-img">
+        <img src="img/juneau/Juneau1.JPG">
+    </div>
+  
+</div>  
+
+
+</section>
+    
+<!--Service   -->
+    
+<section id="service">
+    <div class="title-text">
+        <h1>Pictures</h1>
+    </div>
+    <div class="service-box">
+        <div class="single-service">
+            <img src="img/juneau/Juneau3.JPG">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="img/juneau/Juneau8.JPG">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="img/juneau/Juneau5.JPG">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="img/juneau/Juneau2.JPG">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                
+            </div>
+        </div>
+    </div>
+    
+</section>   
+    
+  
+<script>
+var menuBtn = document.getElementById("menuBtn")    
+var sideNav = document.getElementById("sideNav")    
+var menu = document.getElementById("menu") 
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "img/close.png";
+    }
+    else{
+        sideNav.style.right = "-250px";
+        menu.src = "img/menu.png";
+    }
+}
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+</script>    
+    
+</body>
+</html>
+                  <!-- Source -->
+<!-- https://www.valisemag.com/juneau-facts/ -->
+<!-- https://datausa.io/profile/geo/juneau-ak -->
