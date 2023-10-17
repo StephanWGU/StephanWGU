@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Fairbanks</title>
+  <link rel="stylesheet" type="text/css" href="style/Fairbanks.css">
+ 
+  
+</head>
+<body>
+  <section id="banner">
+    <div class="banner-text">
+        <h1>Welcome to Fairbanks</h1>
+        
+    </div>
+
+</section>
+
+<header id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="index.html">HOME</a></li>    
+        <li><a href="Juneau.html">Juneau</a></li>    
+        <li><a href="Anchorage.html">Anchorage</a></li>
+        <li><a href="Form.html">Form</a></li>          
+    </ul>
+    </nav>
+</header>
+
+<header id="menuBtn">
+    <img src="img/menu.png" id="menu">
+</header>
+
+<!--Features-->
+    
+<section id="feature">
+<div class="title-text"> 
+<h1>City of Fairbanks</h1>
+</div> 
+<div class="feature-box">
+  <div class="feature-text">
+    
+    <div id="header" style="height:15%;width:100%;">
+      <div style='float:left'>
+          <img src="img/fairbanks/Fairbanks3.JPG"alt="Main City in Fairbanks" style="margin-left:10%;margin-top:5%"/>
+      </div>
+      <div style='float:right'>
+          <table border="1" width="44" style="margin-left:30%;float:top;"> 
+            
+    <tr>
+      <th>Population</th>
+      <th>Year of city incorporated</th>
+      <th>location of City</th>
+      <th>Classification of City</th>
+      <th>Average income</th>
+    </tr>
+
+    <tr>
+      <td>32,702</td>
+      <td>November 10, 1903</td>
+      <td>Alaska</td>
+      <td>Urban</td>
+      <td>$66,572</td>
+      <tr>
+        <th>Senator</th>
+        <th>Homeownership</th>
+        <th>Homeowners with Mortgage</th>
+        <th>Insured</th>
+        <th>uninsured</th>
+      </tr>
+      <tr>
+      <td>Scott Jiu Wo Kawasaki</td>
+      <td>37.8%</td>
+      <td>72.9%</td>
+      <td>86.0%</td>
+      <td>7.14%</td>
+      </tr>  
+    </tr>
+    <P> The average income level of the city of Fairbanks compared to the rest of the state is: Fairbanks, AK is 5% lower than the state average and 23% higher than the national average. </P>
+    <P>The region of the state in which the city of Fairbanks is located is: The City of Fairbanks is located in the heart of Alaska's interior on the banks of the Chena River in the Tanana Valley. </P>
+   
+  </table>
+  
+      </div>
+    </div>
+    
+    <!-- </div> -->
+    <div class="features-img">
+        
+    </div>
+</div>  
+  </section>
+
+<section id="Info">
+  <div class="title-text">
+  
+  <h1>Fairbanks Info</h1>
+  <P> <a href="https://en.wikipedia.org/wiki/Fairbanks,_Alaska" target="_blank" rel="noopener noreferrer"> Fairbanks</a> is located in the Tanana Valley and is the coldest largest city in United States.</p>
+  </div>
+
+  <ol>
+    <h2>Fairbanks Facts</h2>
+    <li>By 1911, Fairbanks was Alaska territory’s largest city, with a population of 3,500. </li>
+    <li>Gold is still commercially mined in two locations near Fairbanks.</li>
+    <li>Fairbanks is located under the Auroral Oval.</li>
+    <li>Nearly half of Fairbank’s population is made up of military personnel.</li>
+    <li>Aviation and the military are two major industries in Fairbanks.</li>
+  </ol>
+
+  <aside>
+
+    <h1> Wild Life </h1>
+      <p> Lynx: These gorgeous creatures are found across most of mainland Alaska.</p>
+      <p> Fox: The red fox can sometimes be seen darting across the road in woody, brushy areas.  </p>
+      <p> Caribou: Caribou are distributed in 32 herds in the Arctic tundra, mountain tundra and northern forests of Alaska.</p>
+    
+  </aside>
+
+</section>
+    
+<!--Service   -->
+    
+<section id="service">
+    <div class="title-text">
+        <h1>Pictures</h1>
+    </div>
+    <div class="service-box">
+        <div class="single-service">
+            <img src="img/fairbanks/Fairbanks2.JPG">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="img/fairbanks/Fairbanks6.JPG">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="img/fairbanks/Fairbanks5.JPG">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="img/fairbanks/Fairbanks8.JPG">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                
+            </div>
+        </div>
+    </div>
+    
+</section>   
+    
+  
+<script>
+var menuBtn = document.getElementById("menuBtn")    
+var sideNav = document.getElementById("sideNav")    
+var menu = document.getElementById("menu") 
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "img/close.png";
+    }
+    else{
+        sideNav.style.right = "-250px";
+        menu.src = "img/menu.png";
+    }
+}
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+</script>    
+    
+</body>
+</html>
+
+                <!-- Source -->
+<!-- https://www.valisemag.com/fairbanks-facts/ -->
+<!-- https://datausa.io/profile/geo/fairbanks-ak -->
